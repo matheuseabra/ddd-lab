@@ -1,0 +1,44 @@
+{
+  "name": "ddd-lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "ddd",
+    "typescript"
+  ],
+  "author": "Matheus Seabra <matheusvieiracoelho@gmail.com>",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon"
+  },
+  "dependencies": {
+    "@types/bluebird": "^3.5.29",
+    "@types/validator": "^10.11.3",
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.0.0",
+    "rand-token": "^0.4.0",
+    "redis": "^2.8.0",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.8",
+    "@types/redis": "^2.8.14",
+    "@types/sequelize": "^4.28.6",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}
